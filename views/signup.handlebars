@@ -1,0 +1,81 @@
+<div
+  class='modal modal-sheet position-static d-block p-4 py-md-5'
+  tabindex='-1'
+  role='dialog'
+  id='modalSignup'
+>
+  <div class='modal-dialog' role='document'>
+    <div class='modal-content rounded-4 shadow'>
+      <div class='modal-header p-5 pb-4 border-bottom-0'>
+        <img
+          class='mb-4'
+          src='/images/logo.jpg'
+          alt=''
+          width='72'
+          height='57'
+        />
+        <h1 class='fw-bold mb-0 fs-2'>Sign Up</h1>
+        <button
+          type='button'
+          class='btn-close'
+          data-bs-dismiss='modal'
+          aria-label='Close'
+        ></button>
+      </div>
+      <div class='modal-body p-5 pt-0'>
+        <form class='signup-form'>
+          <div class='form-floating mb-3'>
+            <input
+              type='text'
+              class='form-control rounded-3'
+              id='name-signup'
+              name='name-signup'
+              placeholder='Your Name'
+            />
+            <label for='name-signup'>Name</label>
+          </div>
+          <div class='form-floating mb-3'>
+            <input
+              type='email'
+              class='form-control rounded-3'
+              id='email-signup'
+              name='email-signup'
+              placeholder='name@example.com'
+            />
+            <label for='email-signup'>Email</label>
+          </div>
+          <div class='form-floating mb-3'>
+            <input
+              type='password'
+              class='form-control rounded-3'
+              id='password-signup'
+              name='password-signup'
+              placeholder='Password'
+            />
+            <label for='password-signup'>Password</label>
+          </div>
+          <button
+            class='w-100 mb-2 btn btn-lg rounded-3 btn-primary'
+            type='submit'
+          >Sign up</button>
+        </form>
+        <div>
+          <small class='text-body-secondary'>If you already have an account
+            click
+            <a href='/login'>login</a>.</small>
+          <hr class='my-4' />
+          <button
+            class='w-100 py-2 mb-2 btn btn-outline-primary rounded-3'
+            type='submit'
+          >
+            <svg class='bi me-1' width='16' height='16'><use
+                xlink:href='/auth/google'
+              /></svg>
+            Sign up with Google
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src='/js/signup.js'></script>
