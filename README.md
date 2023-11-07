@@ -50,6 +50,14 @@ The following steps were taken to complete the project:
 
 ## Usage
 
+- Clone repo onto local device
+- Open repo in local CLI
+- Make sure node packages are installed by running `npm i` in the CLI
+- Run `npm run seed` to seed the database
+    - This will run `node seeds/index.js`
+- Run `npm run start` in the CLI to start server
+    - This will run `node server.js`
+- Open up [localhost:3001](localhost:3001) in the browser to view the text editor application
 - Pull up the homepage for the online marketplace
 - Click on the nav bar to go to any of the following pages: 'Home', 'Login', 'Sign Up' or 'About'
 - Once signed up and/or logged in, you will be able to create an item that you are looking to sell (with an item name, price, description)
